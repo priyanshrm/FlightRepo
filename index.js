@@ -394,28 +394,28 @@ setInterval(function() {
     document.getElementById('todaydate').innerText =  date.toLocaleTimeString();
 }, 1000);   
 
-function addProduct() {
-    var data = validate();
-    console.log(data)
-    if (data.flag)
-        document.getElementById('msg').innerHTML = '<span style = "color:green">Searching...</span>';
-    else 
-        document.getElementById('msg').innerHTML = '<span style = "color:red">Invalid</span>';
+// function addProduct() {
+//     var data = validate();
+//     console.log(data)
+//     if (data.flag)
+//         document.getElementById('msg').innerHTML = '<span style = "color:green">Searching...</span>';
+//     else 
+//         document.getElementById('msg').innerHTML = '<span style = "color:red">Invalid</span>';
     
-    flightDepartures.push({"id":data.pid, "pname":data.pname, "ptype":data.ptype, "price":data.price})
-    console.log(flightDepartures) 
+//     flightDepartures.push({"id":data.pid, "pname":data.pname, "ptype":data.ptype, "price":data.price})
+//     console.log(flightDepartures) 
  
-    var tableHeader = '<table><thead><tr> <th>Arrival City</th> \
-    <th>Arrival Time</th> <th>Departure City</th> <th>departure Time</th> \
-    <th>Flight Number</th> <th>day of Month</th> <th>Month</th>  <th>Year </th> </thead></table>';
-    var tableBody='';
-    for (let i = 0 ; i <flightDepartures.length;i++){
-        tableBody = tableBody+'<tr><td> ' + flightDepartures[i].id+'</td><td> '+
-                    flightDepartures[i].pname+ '</td><td> '+ flightDepartures[i].ptype + 
-                    '</td><td> '+ flightDepartures[i].price;
-    }
-    dataEl.innerHTML = (tableHeader + tableBody + '</tbody><thead>')
-}
+//     var tableHeader = '<table><thead><tr> <th>Arrival City</th> \
+//     <th>Arrival Time</th> <th>Departure City</th> <th>departure Time</th> \
+//     <th>Flight Number</th> <th>day of Month</th> <th>Month</th>  <th>Year </th> </thead></table>';
+//     var tableBody='';
+//     for (let i = 0 ; i <flightDepartures.length;i++){
+//         tableBody = tableBody+'<tr><td> ' + flightDepartures[i].id+'</td><td> '+
+//                     flightDepartures[i].pname+ '</td><td> '+ flightDepartures[i].ptype + 
+//                     '</td><td> '+ flightDepartures[i].price;
+//     }
+//     dataEl.innerHTML = (tableHeader + tableBody + '</tbody><thead>')
+// }
 
 function validate() {
     var departureCity = document.getElementById('ddlleavingcity').value; 
@@ -436,9 +436,9 @@ function validate() {
 function showFlights() {
     var data = validate()
     if (data.flag)
-        document.getElementById('msg').innerHTML = '<span style = "color:green">Product added</span>';
+        document.getElementById('msg').innerHTML = '<span style = "color:green">Searchin flights...</span>';
     else 
-        document.getElementById('msg').innerHTML = '<span style = "color:red">Product not added</span>';
+        document.getElementById('msg').innerHTML = '<span style = "color:red">Invalid Input</span>';
     var tableHeader = '<table><thead><tr> <th>Arrival City</th> \
     <th>Arrival Time</th> <th>Departure City</th> <th>departure Time</th> \
     <th>Flight Number</th> <th>Day</th> <th>Month</th>  <th>Year </th></thead><tbody>';
