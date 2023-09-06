@@ -1,0 +1,169 @@
+<!DOCTYPE html>>
+<html>
+
+<head>
+
+</head>
+<body>
+    <h1>Flight Information</h1>
+    <hr />
+    <h2>
+        <div id="todaydate">
+    
+        </div>
+    </h2>
+    <div style="display: inline;">
+        <input type="text" id="txtfirstname" placeholder="First Name" />
+        <hr />
+        <input type="text" id="txtlastname" placeholder="Last Name" />
+        <hr />
+        <input type="number" id="numage" placeholder="Age" />
+        <hr />
+        <select id="ddlleavingcity">
+            <option value="">Departure City</option>
+            <option value="New York">New York</option>  
+            <option value="Los Angeles">Los Angeles</option>    
+            <option value="Chicago">Chicago</option>    
+            <option value="Houston">Houston</option>    
+        </select>  
+        <select id="ddlreturningcity">
+            <option value="">Arrival City</option>   
+            <option value="New York">New York</option>  
+            <option value="Los Angeles">Los Angeles</option>    
+            <option value="Chicago">Chicago</option>
+            <option value="Houston">Houston</option>
+        </select> 
+        <hr />
+        <select id="ddlflightclass">
+            <option value="">Select Class</option>  
+            <option value="First Class">First Class</option>    
+            <option value="Economy Class">Economy Class</option>  
+            <option value="Business Class">Business Class</option>    
+        </select>
+        <hr />
+        <select id="ddlday--from">
+            <option value="">Departure Day</option>    
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+        </select>
+        <select id="ddlmonth--from">
+            <option value="">Departure Month</option>  
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+
+        </select>
+        <select id="ddlyear--from">
+            <option value="">Departure Year</option> 
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+        </select>
+        <hr />
+        <select id="ddlday--to">
+            <option value="">Arrival Day</option>    
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+        </select>
+        <select id="ddlmonth--to">
+            <option value="">Arrival Month</option>  
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+
+        </select>
+        <select id="ddlyear--to">
+            <option value="">Arrival Year</option> 
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+        </select>
+        <hr />
+        <input type="button" value="Go" onclick="showFlights()" />
+        <input type="button" value="Reset" />
+        <hr />
+        <div id="msg">
+        </div>
+        <div id='flightsData'>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
