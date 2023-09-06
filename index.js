@@ -1,5 +1,204 @@
 var flightDepartures = [
     {
+        dayOfMonth: 9,
+        month: 'June',
+        year: 2023,
+        flightNumber: 'AA777',
+        departureCity: 'Los Angeles',
+        arrivalCity: 'Houston',
+        departureTime: '10:45 AM',
+        arrivalTime: '01:00 PM'
+    },
+    {
+        dayOfMonth: 18,
+        month: 'July',
+        year: 2024,
+        flightNumber: 'DL888',
+        departureCity: 'Houston',
+        arrivalCity: 'New York',
+        departureTime: '03:30 PM',
+        arrivalTime: '06:45 PM'
+    },
+    {
+        dayOfMonth: 7,
+        month: 'August',
+        year: 2025,
+        flightNumber: 'WN999',
+        departureCity: 'Chicago',
+        arrivalCity: 'Los Angeles',
+        departureTime: '12:15 PM',
+        arrivalTime: '03:30 PM'
+    },
+    {
+        dayOfMonth: 5,
+        month: 'September',
+        year: 2023,
+        flightNumber: 'UA111',
+        departureCity: 'Los Angeles',
+        arrivalCity: 'Houston',
+        departureTime: '02:00 PM',
+        arrivalTime: '05:15 PM'
+    },
+    {
+        dayOfMonth: 16,
+        month: 'October',
+        year: 2024,
+        flightNumber: 'DL222',
+        departureCity: 'Chicago',
+        arrivalCity: 'New York',
+        departureTime: '09:30 AM',
+        arrivalTime: '12:45 PM'
+    },
+    {
+        dayOfMonth: 11,
+        month: 'November',
+        year: 2025,
+        flightNumber: 'WN444',
+        departureCity: 'Houston',
+        arrivalCity: 'Chicago',
+        departureTime: '07:30 AM',
+        arrivalTime: '10:45 AM'
+    },
+    {
+        dayOfMonth: 22,
+        month: 'December',
+        year: 2023,
+        flightNumber: 'UA555',
+        departureCity: 'New York',
+        arrivalCity: 'Chicago',
+        departureTime: '02:15 PM',
+        arrivalTime: '05:30 PM'
+    },
+    {
+        dayOfMonth: 3,
+        month: 'January',
+        year: 2024,
+        flightNumber: 'DL666',
+        departureCity: 'Chicago',
+        arrivalCity: 'Los Angeles',
+        departureTime: '08:45 AM',
+        arrivalTime: '12:00 PM'
+    },
+    {
+        dayOfMonth: 14,
+        month: 'February',
+        year: 2025,
+        flightNumber: 'AA777',
+        departureCity: 'New York',
+        arrivalCity: 'Houston',
+        departureTime: '11:00 AM',
+        arrivalTime: '02:15 PM'
+    },
+    {
+        dayOfMonth: 25,
+        month: 'March',
+        year: 2023,
+        flightNumber: 'DL888',
+        departureCity: 'Houston',
+        arrivalCity: 'Los Angeles',
+        departureTime: '03:00 PM',
+        arrivalTime: '06:15 PM'
+    },{
+        dayOfMonth: 16,
+        month: 'April',
+        year: 2024,
+        flightNumber: 'WN555',
+        departureCity: 'Chicago',
+        arrivalCity: 'New York',
+        departureTime: '10:30 AM',
+        arrivalTime: '01:45 PM'
+    },
+    {
+        dayOfMonth: 5,
+        month: 'May',
+        year: 2025,
+        flightNumber: 'UA666',
+        departureCity: 'New York',
+        arrivalCity: 'Houston',
+        departureTime: '04:15 PM',
+        arrivalTime: '07:30 PM'
+    },
+    {
+        dayOfMonth: 8,
+        month: 'June',
+        year: 2023,
+        flightNumber: 'DL777',
+        departureCity: 'Houston',
+        arrivalCity: 'Chicago',
+        departureTime: '01:45 PM',
+        arrivalTime: '04:00 PM'
+    },
+    {
+        dayOfMonth: 22,
+        month: 'July',
+        year: 2024,
+        flightNumber: 'AA888',
+        departureCity: 'Chicago',
+        arrivalCity: 'Los Angeles',
+        departureTime: '05:30 PM',
+        arrivalTime: '08:45 PM'
+    },
+    {
+        dayOfMonth: 9,
+        month: 'August',
+        year: 2025,
+        flightNumber: 'WN999',
+        departureCity: 'New York',
+        arrivalCity: 'Houston',
+        departureTime: '02:00 PM',
+        arrivalTime: '05:15 PM'
+    }
+    ,{
+    dayOfMonth: 7,
+    month: 'January',
+    year: 2023,
+    flightNumber: 'AA101',
+    departureCity: 'Los Angeles',
+    arrivalCity: 'New York',
+    departureTime: '09:15 AM',
+    arrivalTime: '12:30 PM'
+},
+{
+    dayOfMonth: 22,
+    month: 'February',
+    year: 2024,
+    flightNumber: 'DL222',
+    departureCity: 'Houston',
+    arrivalCity: 'Chicago',
+    departureTime: '04:30 PM',
+    arrivalTime: '07:45 PM'
+},
+{
+    dayOfMonth: 12,
+    month: 'March',
+    year: 2025,
+    flightNumber: 'WN333',
+    departureCity: 'New York',
+    arrivalCity: 'Chicago',
+    departureTime: '02:45 PM',
+    arrivalTime: '05:15 PM'
+},
+{
+    dayOfMonth: 4,
+    month: 'April',
+    year: 2023,
+    flightNumber: 'UA444',
+    departureCity: 'Chicago',
+    arrivalCity: 'Houston',
+    departureTime: '08:00 AM',
+    arrivalTime: '11:15 AM'
+},
+{
+    dayOfMonth: 14,
+    month: 'May',
+    year: 2024,
+    flightNumber: 'DL555',
+    departureCity: 'New York',
+    arrivalCity: 'Houston',
+    departureTime: '01:30 PM',
+    arrivalTime: '04:45 PM'
+},
+    {
         dayOfMonth: 5,
         month: 'January',
         year: 2023,
