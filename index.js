@@ -398,9 +398,9 @@ function addProduct() {
     var data = validate();
     console.log(data)
     if (data.flag)
-        document.getElementById('msg').innerHTML = '<span style = "color:green">Product added</span>';
+        document.getElementById('msg').innerHTML = '<span style = "color:green">Searching...</span>';
     else 
-        document.getElementById('msg').innerHTML = '<span style = "color:red">Product not added</span>';
+        document.getElementById('msg').innerHTML = '<span style = "color:red">Invalid</span>';
     
     flightDepartures.push({"id":data.pid, "pname":data.pname, "ptype":data.ptype, "price":data.price})
     console.log(flightDepartures) 
